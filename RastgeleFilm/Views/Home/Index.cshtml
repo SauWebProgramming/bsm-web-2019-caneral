@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "Anasayfa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="main-section" style="background-color:black" id="filmSayfasi">
+    <!--main-section-start-->
+    <div class="container">
+        <h2>Kuruluş Osman</h2>
+        <h6>Film hakkında kısa bilgilendirme.</h6>
+        <div class="row">
+            <div class="col-sm">
+                O, kömür karası gözleriyle, gaza ve hürriyet ateşini tutuşturacaktı.
+
+                Adı, Ertuğrul Gazi oğlu Osman’dı…
+
+                Karanlığın içinde ona yol gösteren “aşk” oldu…
+
+                Kan ve gözyaşıyla sulanan topraklarda, gök ekini gibi biçilen; yedi göğü, yedi yeri, dağları, denizleri aşacak bir milletin rüyasını “aşkla” gördü.
+
+                Gücünü kılıcından değil, “aşktan” aldı… Zorbalığa adaletle; köleliğe hürriyetle direnen, tarihin gördüğü en büyük imparatorluğa adını “aşkla” verdi.
+
+                72 milleti kıran bozuk düzene karşı başkaldırı, mazlumların sessiz çığlığına umut, Kuruluş’un adı oldu…
+
+                Kuruluş Osman… 400 çadırlık bir obadan, “ilahi aşkla” kurulan bir cihan imparatorluğuna yürüyüşün hikayesi.
+
+            </div>
+            <div class="col-sm">
+                <!--Video Başlangıç Kısmı-->
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video controls width="600" height="240" autoplay>
+                                <source src="~/ko2.mp4" type="video/mp4">
+                                Video Yüklenemedi.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <!--Video Bitiş Kısmı-->
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />  
+                <a class="link animated fadeInUp delay-1s servicelink col-md" href="#filmSayfasi">Filmi Değiştir</a>
+            </div>
+            <div class="col-sm">
+                <img src="~/img/kurulusOsman.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!--main-section-end-->
