@@ -20,7 +20,7 @@ namespace RastgeleFilm.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(MovieRepository.Movies);
         }
 
         
