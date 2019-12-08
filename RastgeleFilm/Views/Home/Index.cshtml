@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Movie>
+﻿@model IEnumerable<RastgeleFilm.Models.Film>
 @{
     ViewData["Title"] = "Anasayfa";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -16,23 +16,14 @@
             {
                 <h2>@name.FilmAd</h2>
                 <h6>Imdb Puanı: @name.FilmPuan</h6>
-            }
 
+            }
         }
         <div class="row">
             <div class="col-sm">
-                @foreach (var acikla in Model)
-                {
-                    if (acikla.FilmId == randi)
-                    { 
-                       @acikla.Aciklama
-                    }
-
-                }
+                <a class="btn btn-warning btn-block" href="/Home/Index">Filmi Değiştir</a>
             </div>
             <div class="col-sm">
-
-
                 @foreach (var movie in Model)
                 {
 
@@ -43,35 +34,47 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <video controls width="600" height="240" autoplay>
-                                        <source src="~/video/@movie.Video" type="video/mp4" alt="@movie.FilmAd">
+                                        <source src="~/video/@movie.VideoYolu" type="video/mp4" alt="@movie.FilmAd">
                                         Video Yüklenemedi.
                                     </video>
                                 </div>
                             </div>
                         </div>
                         <!--Video Bitiş Kısmı-->
+
                     }
+
 
                 }
 
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <a class="link animated fadeInUp delay-1s servicelink col-md" href="#filmSayfasi">Filmi Değiştir</a>
             </div>
             <div class="col-sm">
                 @foreach (var gorsel in Model)
                 {
                     if (gorsel.FilmId == randi)
                     {
-                        <img src="~/img/@gorsel.Resim" alt="">
+
+                        <img src="~/img/@gorsel.ResimYolu" alt="">
+
                     }
+
+                }
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-sm">
+            <h3>FİLMİN KONUSU</h3>
+            @foreach (var acikla in Model)
+            {
+                if (acikla.FilmId == randi)
+                {
+                    @acikla.FilmAciklama
+
                 }
 
-            </div>
+
+            }
         </div>
     </div>
 </section>

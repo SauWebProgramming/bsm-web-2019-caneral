@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CASPER\\Documents\\RastgeleFilm\\RastgeleFilm\\RastgeleFilm.csproj": {}
+    "C:\\Users\\CASPER\\Documents\\bsm-web-2019-caneral\\RastgeleFilm\\RastgeleFilm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CASPER\\Documents\\RastgeleFilm\\RastgeleFilm\\RastgeleFilm.csproj": {
+    "C:\\Users\\CASPER\\Documents\\bsm-web-2019-caneral\\RastgeleFilm\\RastgeleFilm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CASPER\\Documents\\RastgeleFilm\\RastgeleFilm\\RastgeleFilm.csproj",
+        "projectUniqueName": "C:\\Users\\CASPER\\Documents\\bsm-web-2019-caneral\\RastgeleFilm\\RastgeleFilm.csproj",
         "projectName": "RastgeleFilm",
-        "projectPath": "C:\\Users\\CASPER\\Documents\\RastgeleFilm\\RastgeleFilm\\RastgeleFilm.csproj",
+        "projectPath": "C:\\Users\\CASPER\\Documents\\bsm-web-2019-caneral\\RastgeleFilm\\RastgeleFilm.csproj",
         "packagesPath": "C:\\Users\\CASPER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CASPER\\Documents\\RastgeleFilm\\RastgeleFilm\\obj\\",
+        "outputPath": "C:\\Users\\CASPER\\Documents\\bsm-web-2019-caneral\\RastgeleFilm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
