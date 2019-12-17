@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -14,23 +18,21 @@ namespace RastgeleFilm.Controllers
     {
         //Kurucu fonksiyon(veriyi çekmek için gerekli)
         private readonly DataContext _context;
-        public HomeController(DataContext context)
-        {
-            _context = context;
-        }
-        //private readonly ILogger<HomeController> _logger;
 
-        /*public HomeController(ILogger<HomeController> logger)
+        protected UserManager<IdentityUser> mUserManager;
+
+        protected SignInManager<IdentityUser> mSignInManager;
+        public HomeController(
+            DataContext context)
         {
-            _logger = logger;
-        }
-        */
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Filmler.ToListAsync());
+            _context = context;       
         }
 
-
+        public IActionResult Index()
+        {//Rastgele veri çekmek için kullanıyorum.
+            var rastgeleGonder = _context.Filmler.OrderBy(u => Guid.NewGuid()).Take(1).ToList();
+            return View(rastgeleGonder.ToList());
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -1,0 +1,66 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Giriş Yap";
+}
+<div class="container">
+    <br>  <p class="text-center">En güncel film önerileri seninle olsun... </p>
+    <hr>
+    <div class="card bg-light">
+        <article class="card-body mx-auto" style="max-width: 400px;">
+            <h4 class="card-title mt-3 text-center">Giriş Yap</h4>
+            <p class="text-center">Hesabınıza giriş yapın</p>
+            <!--
+            <p>
+                <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+                <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+            </p>-->
+
+            <form id="account" method="post">
+                <!-- form-group// -->
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                    </div>
+                    <input asp-for="Input.Email" class="form-control" placeholder="E-posta" type="email">
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input asp-for="Input.Password" class="form-control" placeholder="Şifre" type="password">
+                </div>
+                <div class="form-group input-group">
+                    <div class="checkbox">
+                        <label asp-for="Input.RememberMe">
+                            <input asp-for="Input.RememberMe" />
+                            @Html.DisplayNameFor(m => m.Input.RememberMe)
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block">Giriş Yap</button>
+                </div>
+                <div class="form-group ">
+                    <p>
+                        <a id="forgot-password" asp-page="./ForgotPassword">Parolanızı mı unuttunuz? </a>
+                    </p>
+                    <p>
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Üye değil misin ?</a>
+                    </p>
+                    <p>
+                        <button type="submit" asp-page-handler="SendVerificationEmail" class="btn-link" style="padding:0px;margin:0px;border:0px">E-posta onayını tekrar gönder</button>
+                    </p>
+                </div>
+            </form>
+        </article>
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
+

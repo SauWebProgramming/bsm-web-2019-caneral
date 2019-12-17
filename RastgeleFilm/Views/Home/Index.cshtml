@@ -6,18 +6,10 @@
 <section class="main-section" style="background-color:black" id="filmSayfasi">
     <!--main-section-start-->
     <div class="container">
-        @{
-            Random rand = new Random();
-            int randi = rand.Next(1, 10);
-        }
         @foreach (var name in Model)
         {
-            if (name.FilmId == randi)
-            {
-                <h2>@name.FilmAd</h2>
-                <h6>Imdb Puanı: @name.FilmPuan</h6>
-
-            }
+            <h2>@name.FilmAd</h2>
+            <h6>Imdb Puanı: @name.FilmPuan</h6>
         }
         <div class="row">
             <div class="col-sm">
@@ -26,38 +18,24 @@
             <div class="col-sm">
                 @foreach (var movie in Model)
                 {
-
-                    @if (movie.FilmId == randi)
-                    {
-                        <!--Video Başlangıç Kısmı-->
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <video controls width="600" height="240" autoplay>
-                                        <source src="~/video/@movie.VideoYolu" type="video/mp4" alt="@movie.FilmAd">
-                                        Video Yüklenemedi.
-                                    </video>
-                                </div>
+                    <!--Video Başlangıç Kısmı-->
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <video controls width="600" height="300" autoplay>
+                                    <source src="~/video/@movie.VideoYolu" type="video/mp4" alt="@movie.FilmAd">
+                                    Video Yüklenemedi.
+                                </video>
                             </div>
                         </div>
-                        <!--Video Bitiş Kısmı-->
-
-                    }
-
-
+                    </div>
+                    <!--Video Bitiş Kısmı-->
                 }
-
             </div>
             <div class="col-sm">
                 @foreach (var gorsel in Model)
                 {
-                    if (gorsel.FilmId == randi)
-                    {
-
-                        <img src="~/img/@gorsel.ResimYolu" alt="">
-
-                    }
-
+                    <img width="600" height="300" src="~/img/@gorsel.ResimYolu" alt="">
                 }
             </div>
         </div>
@@ -67,13 +45,7 @@
             <h3>FİLMİN KONUSU</h3>
             @foreach (var acikla in Model)
             {
-                if (acikla.FilmId == randi)
-                {
-                    @acikla.FilmAciklama
-
-                }
-
-
+                @acikla.FilmAciklama                                             
             }
         </div>
     </div>

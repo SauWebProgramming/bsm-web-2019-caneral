@@ -4,72 +4,103 @@
     ViewData["Title"] = "Admin | Filmler";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
+<div class="span9">
 
-    <div class="span9">
-        <h1>Veritabanı Kayıtları</h1>
+    <h1>Veritabanı Kayıtları</h1>
 
-        <p>
-            <a class="btn btn-success" asp-action="Create">Yeni Oluştur</a>
-        </p>
-        <table class="table">
-            <thead>
+    <p>
+        <a class="btn btn-success" asp-action="Create">Yeni Oluştur</a>
+    </p>
+
+    <table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" width="100%">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FilmId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FilmAd)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FilmTur)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FilmPuan)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FilmKategori)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ResimYolu)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.VideoYolu)
+                </th>
+                <th>
+                    CRUD
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
                 <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.FilmId)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.FilmAd)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.FilmTur)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.FilmPuan)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.FilmKategori)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.ResimYolu)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.VideoYolu)
-                    </th>     
-                    <th></th>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FilmId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FilmAd)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FilmTur)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FilmPuan)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FilmKategori)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ResimYolu)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.VideoYolu)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.FilmId">Düzenle</a> |
+                        <a asp-action="Details" asp-route-id="@item.FilmId">Detaylar</a> |
+                        <a asp-action="Delete" asp-route-id="@item.FilmId">Sil</a>
+                    </td>
                 </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.FilmId)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.FilmAd)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.FilmTur)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.FilmPuan)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.FilmKategori)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.ResimYolu)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.VideoYolu)
-                        </td>                        
-                        <td>
-                            <a asp-action="Edit" asp-route-id="@item.FilmId">Düzenle</a> |
-                            <a asp-action="Details" asp-route-id="@item.FilmId">Detaylar</a> |
-                            <a asp-action="Delete" asp-route-id="@item.FilmId">Sil</a>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-        </div>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FilmId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FilmAd)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FilmTur)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FilmPuan)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FilmKategori)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ResimYolu)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.VideoYolu)
+                </th>
+                <th>
+                    CRUD
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</div>
