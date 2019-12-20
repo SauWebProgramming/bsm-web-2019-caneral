@@ -1,0 +1,30 @@
+﻿@model RastgeleFilm.Areas.Admin.Models.CreateRoleModel
+@{
+    ViewData["Title"] = "Create New Role";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="span9">
+    <div class="container">
+        <br>  <p class="text-center">En güncel film önerileri seninle olsun... </p>
+        <hr>
+        <div class="card bg-light">
+            <article class="card-body mx-auto" style="max-width: 400px;">
+                <h4 class="card-title mt-3 text-center">Yeni bir Rol Oluştur</h4>
+                <form method="post">
+                    <!-- form-group// -->
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        </div>
+                        <input asp-for="RoleName" class="form-control" placeholder="Rol Oluştur">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block"> Rol Oluştur  </button>
+                    </div> <!-- form-group// -->
+                </form>
+            </article>
+        </div> <!-- card.// -->
+    </div>
+</div>
+<!--container end.//-->

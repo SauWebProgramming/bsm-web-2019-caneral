@@ -64,6 +64,8 @@
         <a asp-action="Index">Kayıtlara Geri Dön!</a>
     </div>
 </div>
-
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
 
 

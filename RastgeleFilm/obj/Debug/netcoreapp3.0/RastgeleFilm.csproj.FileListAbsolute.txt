@@ -368,3 +368,9 @@ C:\Users\CASPER\Documents\bsm-web-2019-caneral\RastgeleFilm\bin\Debug\netcoreapp
 C:\Users\CASPER\Documents\bsm-web-2019-caneral\RastgeleFilm\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\CASPER\Documents\bsm-web-2019-caneral\RastgeleFilm\obj\Debug\netcoreapp3.0\RastgeleFilm.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\CASPER\Documents\bsm-web-2019-caneral\RastgeleFilm\obj\Debug\netcoreapp3.0\RastgeleFilm.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\CASPER\Documents\bsm-web-2019-caneral\RastgeleFilm\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Administration\CreateRole.cshtml.g.cs
+C:\Users\CASPER\Documents\bsm-web-2019-caneral\RastgeleFilm\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Administration\ListRoles.cshtml.g.cs
+C:\Users\CASPER\Documents\bsm-web-2019-caneral\RastgeleFilm\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Administration\EditRole.cshtml.g.cs
+C:\Users\CASPER\Documents\bsm-web-2019-caneral\RastgeleFilm\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Administration\EditUsersInRole.cshtml.g.cs
+C:\Users\CASPER\Documents\bsm-web-2019-caneral\RastgeleFilm\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Administration\ListUsers.cshtml.g.cs
+C:\Users\CASPER\Documents\bsm-web-2019-caneral\RastgeleFilm\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Administration\EditUser.cshtml.g.cs

@@ -1,4 +1,7 @@
-﻿<!doctype html>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<!doctype html>
 <html>
 
 <head>
@@ -22,6 +25,7 @@
     <link href="~/css/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="~/css/animate.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="~/js/jquery.1.8.3.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="~/css/styles.css" />
 
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -43,7 +47,7 @@
         <div class="navbar-brand small-logo">
             <a asp-action="Index"><img src="~/img/smalll-logo.png" alt=""></a>
         </div>
-        
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,7 +63,21 @@
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#">Diziler</a>
                 </li>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Listeler">Listelerim</a>
+                    </li>
 
+                }
+
+                @if (User.IsInRole("Admin"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="admin" asp-controller="dashboard" asp-action="Index">Admin Paneli</a>
+                    </li>
+
+                }
             </ul>
 
             <ul class="navbar-nav ml-auto nav-flex-icons">
@@ -108,7 +126,7 @@
     </nav>-->
     @RenderBody()
     <!-- FOOTER BAŞLANGIÇ KISMI -->
-    <footer class="footer">
+    <footer class="card bg-dark">
         <div class="container">
             <div class="footer-logo"><a href="#"><img src="~/img/big-logo.png" alt=""></a></div>
             <span class="copyright">&copy; Caner Al. Tüm Hakları Saklıdır.</span>

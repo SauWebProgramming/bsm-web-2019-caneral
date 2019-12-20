@@ -14,6 +14,7 @@ using RastgeleFilm.Models;
 
 namespace RastgeleFilm.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         //Kurucu fonksiyon(veriyi çekmek için gerekli)
@@ -27,7 +28,7 @@ namespace RastgeleFilm.Controllers
         {
             _context = context;       
         }
-
+        
         public IActionResult Index()
         {//Rastgele veri çekmek için kullanıyorum.
             var rastgeleGonder = _context.Filmler.OrderBy(u => Guid.NewGuid()).Take(1).ToList();

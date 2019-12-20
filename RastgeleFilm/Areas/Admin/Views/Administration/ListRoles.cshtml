@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityRole>
+@{
+    ViewData["Title"] = "Roller";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="span9">
+    @if (Model.Any())
+    {
+        <br>
+        <p class="text-center">En güncel film önerileri seninle olsun... </p>
+        <hr>
+        <div class="container">
+            <a class="btn btn-primary mb-3" style="width:auto" asp-action="CreateRole"
+               asp-controller="administration">Yeni rol ekle</a>
+        </div>
+        foreach (var role in Model)
+        {
+            <hr />
+            <div class="container">
+                <div class="card-header card-title mt-3 text-center">
+                    Rol Id : @role.Id
+                </div>
+                <div class="card bg-light">
+                    <article class="card-body mx-auto" style="max-width: 400px;">
+                        <h5 class="card-title mt-3 text-center">
+                            @role.Name
+                        </h5>
+                        <div>
+                            <form asp-action="DeleteRole" asp-route-id="@role.Id" method="post">
+                                <a class="btn btn-primary" asp-action="EditRole"
+                                   asp-controller="Administration" asp-route-id="@role.Id">Düzenle</a>
+                                <span id="confirmDeleteSpan_@role.Id" style="display:none">
+                                    <span>Silmek istediğine emin misin ?</span>
+                                    <button type="submit" class="btn btn-danger">Evet</button>
+                                    <a href="#" class="btn btn-primary"
+                                       onclick="confirmDelete('@role.Id', false)">Hayır</a>
+                                </span>
+
+                                <span id="deleteSpan_@role.Id">
+                                    <a href="#" class="btn btn-danger"
+                                       onclick="confirmDelete('@role.Id', true)">Sil</a>
+                                </span>
+                            </form>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="container">
+            <br>  <p class="text-center">En güncel film önerileri seninle olsun... </p>
+            <hr>
+            <div class="card-header card-title mt-3 text-center">
+                Henüz bir rol oluşturulmadı.
+            </div>
+            <div class="card bg-light">
+                <article class="card-body mx-auto" style="max-width: 400px;">
+                    <h5 class="card-title mt-3 text-center">
+                        Rol oluşturmak için aşağıdaki düğmeyi kullanın.
+                    </h5>
+                    <form>
+                        <div class="form-group">
+                            <a asp-controller="administration" asp-action="CreateRole" class="btn btn-primary btn-block">Rol Oluştur</a>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </div>
+    }
+</div>
+@section Scripts{
+    <script src="~/js/CustomScript.js"></script>
+}
