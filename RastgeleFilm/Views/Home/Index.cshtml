@@ -1,4 +1,6 @@
 ﻿@model IEnumerable<RastgeleFilm.Models.Film>
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
 @{
     ViewData["Title"] = "Anasayfa";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -8,12 +10,17 @@
     <div class="container">
         @foreach (var name in Model)
         {
-            <h2>@name.FilmAd</h2>
-            <h6>Imdb Puanı: @name.FilmPuan</h6>
+            
+            <h2>@_localizer[@name.FilmAd]</h2>
+            <h6>@_localizer["Imdb Puanı:"] @name.FilmPuan</h6>
         }
         <div class="row">
             <div class="col-sm">
-                <a class="btn btn-warning btn-block" asp-action="Index" asp-controller="Home">Filmi Değiştir</a>
+                <a class="btn btn-warning btn-block" asp-action="Index" asp-controller="Home">@_localizer["Filmi Değiştir"]</a>
+                <a class="btn btn-light btn-block disabled" >@_localizer["Listeme Ekle"]</a>
+                <a class="btn btn-dark btn-block disabled" >@_localizer["Paylaş"]</a>
+                <a class="btn btn-danger btn-block disabled" >@_localizer["Netflix'te İzle"]</a>
+                <a class="btn btn-primary btn-block disabled" >@_localizer["Bildir!"]</a>
             </div>
             <div class="col-sm">
                 @foreach (var movie in Model)
@@ -42,10 +49,11 @@
     </div>
     <div class="container">
         <div class="col-sm">
-            <h3>FİLMİN KONUSU</h3>
+            <h3>@_localizer["FİLMİN KONUSU"]</h3>
             @foreach (var acikla in Model)
             {
-                @acikla.FilmAciklama                                             
+
+                @_localizer[@acikla.FilmAciklama];
             }
         </div>
     </div>

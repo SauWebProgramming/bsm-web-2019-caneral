@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="2010 yılında başlayan aksiyon dolu maceramızda en zorlu göreve hazırlanın.! Barney ve Lee’nin ekibi bu kez şimdiye kadarki en zor görevi tamamlamak zorundalar. Barney’e zamanında ekibi kurması için yardım eden Cornad isimli adam şu anda silah tüccarı işi yapmaktadır ve Cornad’ın yaptığı bu pis iş tüm ekibin canını sıkar. Bu yüzden Stonebanks takımı ayırmayı kendisine amaç edinmiştir. Barney ise takımı daha da güçlendirerek genç ekip arkadaşı ile birlikte karşı hamle yapmaya hazırlanır ve ekip yeni ve daha güçlü hali ile yeniden bir araya gelir. Barney ve ekibi artık çok daha güçlü ve çok daha teknolojik aletlere sahiptir. Fakat karşılarına çıkacak kötü planlara ne kadar hazırlıklılar bundan emin değiller ve çok zorlu bir görev onları bekliyor. Aksiyon tutkunlarının en sevilen filmi olan Cehennem melekleri serisinin son filminde aksiyon filmlerinin en sevilen, en ünlü isimlerinden oluşan kadro bu kez daha da fazla genişlemiş durumdadır." xml:space="preserve">
+    <value>Prepare for the most challenging mission in our action-packed adventure that began in 2010.! This time, Barney and Lee's team have to complete the most difficult mission ever. The man named Cornad, who helped Barney to build his team on time, is now an arms merchant, and Cornad's nasty business annoys the entire team. Therefore, Stonebanks aims to separate the team. Barney, on the other hand, strengthens the team and prepares to make a counter-attack with the young team-mate, and the team reunites with a new and stronger state. Barney and his team now have much more powerful and much more technological tools. But they are not sure how prepared they are for the bad plans they face, and a very challenging task awaits them. In the latest film of the action angels, the most popular film of the action angels, the cast of the most popular and famous names of the action films has expanded.</value>
+  </data>
+  <data name="Bildir!" xml:space="preserve">
+    <value>Report!</value>
+  </data>
+  <data name="Blade Runner 2049'da ilk filmdeki hikayenin üzerinden geçen 30 yıl sonrası anlatılmaktadır. Los Angeles Polis Departmanı'nda görev yapan Memur K, toplum yaşamını kaosa sokacak olan ve uzun zamandır saklı kalan bir sırrı açığa çıkartır. Bir felaketi önleyebilmesi için eski ödül avcısı Rick Deckard'ı bulup ondan bazı sorularına yanıt alması şarttır.&#xD;&#xA;Başrollerinde Ryan Gosling ve Rick Deckard rolünde Harrison Ford'un boy göstereceği filmin kadrosunda Jared Leto, Robin Wright, Ana de Armas, Carla Juri, Mackenzie Davis, Barkhad Abdi, David Dastmalchian, Hiam Abbass, Lennie James ve Dave Bautista'yı bulunduran devam halkasının yönetmenliğini Denis Villeneuve üstleniyor. Filmin senaryosunda ise Hampton Fancher ve Michael Green imzası var." xml:space="preserve">
+    <value>Blade Runner is told in 2049, 30 years after the story in the first film. Officer K, of the Los Angeles Police Department, uncovers a long-hidden secret that will put community life into chaos. In order to prevent a disaster, he must find former bounty hunter Rick Deckard and answer some of his questions.
+Harrison Ford as Ryan Gosling and Rick Deckard starring Jared Leto, Robin Wright, Ana de Armas, Carla Juri, Mackenzie Davis, Barkhad Abdi, David Dastmalchian, Hiam Abbass, Lennie James and Dave Bautista. is directed by Denis Villeneuve. The screenplay includes Hampton Fancher and Michael Green.</value>
+  </data>
+  <data name="Cehennem Melekleri 1" xml:space="preserve">
+    <value>The Expendables 1</value>
+  </data>
+  <data name="Cehennem Melekleri 2" xml:space="preserve">
+    <value>The Expendables 2</value>
+  </data>
+  <data name="Cehennem Melekleri 3" xml:space="preserve">
+    <value>The Expendables 3</value>
+  </data>
+  <data name="Cehennem Melekleri serisinin 2. filminde Barney Ross’un liderliğinde efsane takımı tekrar bir arada görüyoruz. Bu kez çok daha zor ve acımasız bir düşmana karşı mücadele verecek olan ekip aralarından birini kaybetmenin acısıyla intikam peşinde koşacaklar. İlk başta basit bir hesaplaşma gibi görünen hadise aralarında ki en genç üyenin öldürülmesiyle büyük bir savaşın başlangıcını ateşleyecektir…  Muhteşem aksiyon ve suç filmlerinin usta yönetmeni Simon West tarafından çekimleri Amerika’da gerçekleşen Cehennem Melekleri 2 filmi Richard Wenk tarafından ele alınmış ve kurgulanmıştır. Başrollerde ise birbirinden ünlü isimler arasında en önemlileri Sylvester Stallone, Liam Hemsworth ve Randy Couture gibi oyunculardır." xml:space="preserve">
+    <value>In the second film of The Angels of Hell series, we see the legendary team together again under the leadership of Barney Ross. This time, the team will fight against a much more difficult and ruthless enemy and will seek revenge with the pain of losing one of them. At first, the incident, which seemed to be a simple reckoning, would trigger the beginning of a great war with the murder of the youngest member among them. The leading actors are Sylvester Stallone, Liam Hemsworth and Randy Couture.</value>
+  </data>
+  <data name="Cleo, Meksiko’nun orta sınıf ailelerinin yaşadığı bir Roma mahallesinde bulunan bir evde hizmetçi olarak çalışan genç bir kadındır. Bir yandan ev işleri ile uğraşan Cleo, bir yandan da evdeki dört çocukla ilgilenir. O tüm zamanını hizmetlisi olduğu evde geçirse de kendisine ait bambaşka bir dünyası vardır. Genç kadın, gönlünü Fermin adındaki bir adama kaptırmıştır. Fakat bu ilişki pek de Cleo’nun düşlediği gibi sonuçlanmaz. Bu sırada evin dört çocuk annesi olan hanımı Sofia, kocasının yokluğu ile başa çıkmaya çalışır. Birbirinden farklı hayatlara sahip olsalar da benzer travmalar yaşayan Cleo ve Sofia, siyasi kargaşanın hüküm sürdüğü bir ortamda birbirlerinin en büyük destekçisi olur.&#xD;&#xA;Filmin yönetmenliğini ve senaristliğini &quot;Büyük Umutlar&quot;, “Harry Potter ve Azkaban Tutsağı”, “Y Tu Mama Tambien”, “Son Umut” ve “Yerçekimi” gibi başarılı filmler ile karşımıza çıkan iki Oscar ödüllü Alfonso Cuaron üstleniyor." xml:space="preserve">
+    <value>Cleo is a young woman who works as a maid in a home in a Roman neighborhood of middle-class Mexican families. Cleo, on the one hand, takes care of the household chores and takes care of the four children in the house. Although he spends all his time in the house where he is a servant, he has his own world. The young woman lost her heart to a man named Fermin. But this relationship doesn't work out much like Cleo imagined. Meanwhile, Sofia, the mother of four children, tries to cope with her husband's absence. Cleo and Sofia, who have similar traumas even though they have different lives, become the biggest supporters of each other in an environment of political turmoil.
+The film is directed and screened by two Academy Award®-winning Alfonso Cuaron, başarılı Great Hopes,, “Harry Potter and the Prisoner of Azkaban”, Tu Y Tu Mama Tambien ”,“ Last Hope ”and çek Gravity başarılı.</value>
+  </data>
+  <data name="Film, Soğuk Savaş döneminin yansımalarını taşıyan bir çizgi romandan perdeye aktarılmıştır. Hikaye New York’ta yaşanmaktadır. Yıl 1985. ABD ve Sovyetler Birliği, nükleer savaşa girmek üzeredirler. Böyle bir süreçteyken hikayedeki süper kahramanlar, maske ve kostümleri ile halkın arasında gündelik hayatı yaşarlar. Her ne kadar bu kişilere süper kahraman denilse de aslında onların kendi iradelerinden başka güçleri yoktur. Ancak kendi gayretleri ile adaleti oluşturmaya dair emek vermektedirler. Rorschach’ın bir arkadaşı öldürüldüğünde, kendisi bu cinayetin arkasında aslen bu süper kahramanlara karşı bir komplo tehdidi altında olduklarını düşünür ve araştırmaya başlar. Komplonun önünü kesmenin çaresi de dağılan grubunu yeniden toplamak olacaktır." xml:space="preserve">
+    <value>The film has been transferred from a comic book that reflects the Cold War era to the screen. The story takes place in New York. The year 1985. The US and the Soviet Union are about to enter a nuclear war. In such a process, the superheroes in the story live their daily lives among the people with their masks and costumes. Although these people are called superheroes, in fact they have no power other than their own will. However, they strive to create justice through their own efforts. When a friend of Rorschach is murdered, he thinks they are actually under the threat of a conspiracy against these superheroes behind this murder and begins to investigate. The only way to intercept the plot would be to regroup the disintegrating group.</value>
+  </data>
+  <data name="Filmi Değiştir" xml:space="preserve">
+    <value>Change Movie</value>
+  </data>
+  <data name="FİLMİN KONUSU" xml:space="preserve">
+    <value>MOVIE SUBJECT</value>
+  </data>
+  <data name="Günümüzden çok uzak bir gelecekte geçen Uyumsuz filminde insanlar akıl almaz bir şekilde yaşamaktadırlar. Her insanın 16 yaşına geldikten sonra hangi karakteristik özelliklere sahip ise belli başlı görevler içerisine yerleştirilip ömrü boyunca o yaşamı amaç edinmesi sağlanmaktadır. Uyumsuz filminde ki baş karakterimiz Tris isimli genç ise 16 yaşına geldiğinde kendisinin de bu özelliklerden birine göre sınıfa ayrılacağını öğrendiğinde, kendisi ile ilgili çok büyük bir şey fark eder. Çünkü Tris çok uyumsuz bir kişiliğe sahiptir. Hiç bir gruba uymayan özellikleri çok nadir görülen bir durumdur ve işin daha da kötüsü hiç bir yere uymayan kişilerin bir lider tarafından yok edilirler. Tris artık canını kurtarabilmek için arkasına bakmadan kaçmak zorundadır ve bu çıktığı yolculuk sırasında hem hayatta kalma çabası verirken hem de kendisi gibi uyumsuz olan insanlar ile neden bu kadar tehlike arz ettiklerini öğrenmek için çaba göstereceklerdir." xml:space="preserve">
+    <value>People live in an unimaginable way in Incompatible film, set in a very distant future. After each person reaches the age of 16, he / she is placed in the main tasks which he / she has the characteristic features and he / she is ensured that he / she aims for that life during his / her life. When the youngest named Tris, our main character in Incompatible film, learns that when he turns 16, he will be leaving the classroom according to one of these features, he realizes something very big about himself. Because Tris has a very incompatible personality. Their characteristics that do not fit into any group are very rare, and even worse, those who do not fit anywhere are destroyed by a leader. Tris now has to flee without looking back to save his life, and will endeavor to survive on his journey and find out why they are so dangerous with incompatible people like him.</value>
+  </data>
+  <data name="Hitler'in ordusunda yer alan Jojo Betzler adındaki bir çocuk, annesinin evlerinde Yahudi bir kızı gizlice misafir ettiğini öğrenir. Kız, evlerinin çatı katında kalıyordur. Tabii bu durum en yakın sırdaşı hayali arkadaşı Adolf Hitler olan Jojo'nun kafasında büyük bir karmaşaya yol açacaktır. Hayali arkadaşı olan Hitler, hiç de orijinalindeki gibi değildir. Jojo'nun bu korkunç ırkçılığa karşı gelmek için mücadele etmesi gerekmektedir." xml:space="preserve">
+    <value>A child named Jojo Betzler in Hitler's army learns that his mother has secretly hosted a Jewish girl in their home. She's staying in the loft of their house. Of course, this will lead to a major confusion in the minds of Jojo, his closest confidant imaginary friend, Adolf Hitler. Hitler, his imaginary friend, is not at all like the original one. Jojo must fight to defy this terrible racism.</value>
+  </data>
+  <data name="Imdb Puanı:" xml:space="preserve">
+    <value>Imdb:</value>
+  </data>
+  <data name="Kuralsız" xml:space="preserve">
+    <value>Insurgent</value>
+  </data>
+  <data name="Kuralsız 2015 filmi, Fütüristik bir distopyada geçen ve beş farklı kategoriye ayrılmış olan bir toplumda belli bir yaşa gelen gençler kendileri için belirlenmiş sınıflarda eğitilmelerini konu alırken, bu yapılanma içinde kendine has özellikleri olan Tris ise serinin ilk filminde işleyen düzeni değiştirebilecek güze sahip olduğunu keşfetmişti.&#xD;&#xA;Veronice Roth’un öyküsünden sinemaya uyarlanan devam filmi Insurgent 2015 filmi ise Tris’in çabalarıyla bir devrim hareketinin başlamasını ve mevcut hiyerarşinin yavaş yavaş dağılmasını izliyoruz." xml:space="preserve">
+    <value>In the 2015 film without rules, young people of a certain age in a futuristic dystopia and divided into five different categories were educated in classes designated for them, while Tris, with its unique characteristics within this structure, discovered that it had the power to change the order in the first film of the series.
+The sequel Insurgent 2015, adapted from the story of Veronice Roth, follows the beginning of a revolutionary movement with Tris' efforts and the gradual dissolution of the current hierarchy.</value>
+  </data>
+  <data name="Labirent:Alev Deneyleri" xml:space="preserve">
+    <value>Maze Runner: The Scorch Trials</value>
+  </data>
+  <data name="Labirent:Son İsyan" xml:space="preserve">
+    <value>Maze Runner: The Death Cure</value>
+  </data>
+  <data name="Labirent:Ölümcül Kaçış" xml:space="preserve">
+    <value>The Maze Runner</value>
+  </data>
+  <data name="Listeme Ekle" xml:space="preserve">
+    <value>Add to My List</value>
+  </data>
+  <data name="Maze Runner Scorch Trials 2015 filmi tanıtım afişinde de yazdığı şekliyle “Maze Savaşı daha yeni başlıyor.” Filmin ilk ayağında Maze’den kurtulan kahramanlar, tam da düzlüğe çıktıkları sırada şimdi de ıssız ve akla gelmeyen engellerin bulunduğu bir arazide hayatta kalmak için tekrar çabalamak zorundalar. Bu çabaları binbir zorlukla daha da kötü bir hal alırken kendilerinden başta yardım edecek kimsenin de bulunmayışı seyirciyi gerilimin doruklarına çıkarırken, bir an olsun azalmayan aksiyon ve harika bilim kurgu öğeleriyle de övgüleri almayı kesinlikle hak ediyor. Maze Runner Scorch Trials filmi daha gösterime girmeden filme hayat veren yeşil ışık teknolojisinin seyirci tarafından nasıl karşılanacağı merak konusu olsa da film gösterime girdikten ilk iki hafta içerisinde gelen harika yorumlar bu konuda çok iyi iş çıkarıldığını da ortaya koydu." xml:space="preserve">
+    <value>As the Maze Runner Scorch Trials 2015 promotional poster says, “The Maze War has just begun. Lar In the first leg of the film, the heroes who survived Maze must now try to survive in a deserted and unimaginable obstacle. While these efforts become even worse with thousands of difficulties, the absence of anyone to help them in the first place brings the audience to the peaks of tension, and certainly deserves to be praised for the action and wonderful science fiction elements that do not diminish for a moment. Even though it was a question of how the green light technology, which brought the film to life before it was released, would be welcomed by the audience, the wonderful comments that came within the first two weeks of the film show that they did a great job on this issue.</value>
+  </data>
+  <data name="Mutantlar soylarının tükenmemesi için zamanda yolculuk yapmak zorundadır zira gelecekte kamplara hapsedilmiş durumdadırlar. Sentinel'ler tarafından avlanıp öldürüldükleri için de nesilleri tükenmenin eşiğine gelmiştir. Mutantların soyunu kurtarabilmek için iki ezeli düşman Magneto ve Charles Xavier güçlerini birleştirirler. Planları Sentinel'lerin yarattığı vahşeti durdurmak üzerine kuruludur. Wolverine (Hugh Jackman), kendi kendini iyileştirebildiği için zamanda yolculuğun onda yol açabileceği yan etkiler yok olacaktır. Bu yüzden Wolverine'i Kitty Pryde'ın da yardımıyla geçmişe gönderirler. Trask Industries'in deneyler sonucu ürettiği Sentinel'lerin yapım aşamasına engel olacaklardır. Acaba bu konuda başarılı olabilecekler midir? &#xD;&#xA;&#xD;&#xA;Yedinci X-Men filminde seriden tanıdığımız karakterlere ek olarak Magneto'nun gençlik yıllarını Michael Fassbender canlandırırken, James McAvoy'u da Charles Xavier'in genç hali olarak seyredeceğiz. Yönetmen koltuğundaysa yine Bryan Singer oturuyor." xml:space="preserve">
+    <value>Mutants must travel in time to avoid extinction because they are imprisoned in camps in the future. They are on the verge of extinction because they are hunted and killed by the Sentinels. To save the lineage of mutants, the two archenemy Magneto and Charles Xavier join forces. Their plan is to stop the savagery of the Sentinels. Since Wolverine (Hugh Jackman) is able to heal himself, the side effects that time travel can have in him will disappear. So they send Wolverine back to the past with the help of Kitty Pryde. They will prevent the production of Sentinels produced by Trask Industries. I wonder if they will succeed in this matter?
+
+In the seventh X-Men film, in addition to the characters we know from the series, we will see Magneto's youth as Michael Fassbender and James McAvoy as Charles Xavier's younger version. Bryan Singer is in the director's chair.</value>
+  </data>
+  <data name="Netflix'te İzle" xml:space="preserve">
+    <value>Watch on Netflix</value>
+  </data>
+  <data name="Parazit" xml:space="preserve">
+    <value>Parasite</value>
+  </data>
+  <data name="Park Ailesi'yle tanışın: soyla gelen servetin klasik bir tablosu. Diğer yanda ise Kim Ailesi, sokak zekası bakımından zengin ama başka hiçbir zenginliğe sahip değil. Şans veya kader olsun, bu iki ev halkı bir şekilde bir araya gelir ve Kim ailesi altın bir fırsatın varlığını hemen sezer. Kolej çağındaki Ki-woo tarafından manipülasyon konusunda yetiştirilen Kim çocukları, öğretmen ve sanat terapisti görevleriyle kendilerini Park ailesinin arasına çabucak yerleştirir. Kim'ler “vazgeçilmez” lüks hizmetler sunarken, Parklar ise habersizce evlerindeki her şeyi Kim ailesine kaybetmektedir. Ancak kısa sürede bu düzen bir tehditle karşılaşır. Asalak bir misafir Kim ailesinin yeni keşfettikleri konforu tehdit eder hale geldiğinde, vahşi ve zorlayıcı bir üstünlük mücadelesi patlak verir. Bu mücadele Kim ve Park aileleri arasındaki kırılgan ekosistemi yıkmakla tehdit etmektedir..." xml:space="preserve">
+    <value>Meet the Park Family: a classic picture of the wealth that comes to light. On the other hand, the Kim Family is rich in street intelligence but has no other wealth. Whether fortune or fate, these two households somehow get together and the Kim family immediately senses the existence of a golden opportunity. Raised in the manipulation by college-age Ki-woo, Kim quickly places himself among the Park family with the duties of teachers and art therapists. Kims offer mez indispensable ”luxury services, while Parks unannounced lose everything in their homes to the Kim family. However, in a short time this order faces a threat. When a parasitic guest becomes a threat to the newly discovered comfort of Kim's family, a wild and compelling struggle for superiority breaks out. This struggle threatens to destroy the fragile ecosystem between Kim and Park's families ...</value>
+  </data>
+  <data name="Paylaş" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="Spotlight, taciz olayıyla gündeme gelen bir kilisenin kendini aklamaya çalışmasını ve bu tacizi aydınlatmaya çalışan Boston Globe gazetesi yazarlarını konu alıyor. Gazetenin yazarlarından oluşan “Spotlight” takımı, Katolik Kilisesi’ndeki taciz iddilarıyla ilgili eski defterleri deşer. Bir senelik araştırmaları sonucunda, Boston’ın üst düzey dini, yasal ve idari birliğine ait on yıllarca gizlenen gerçeklere parmak basılır. Yeni atanan genel yayın yönetmeni Marty Baron 2001 yazında Globe’un başına geçmek üzere Miami’den geldiğinde, ayağının tozuyla Spotlight ekibini, 30 yıl boyunca düzinelerce çocuğa cinsel istismarda bulunmakla suçlanan yerel bir rahip hakkındaki bir makaleyi takip etmekle görevlendirir. Boston’da Katolik Kilisesi’ni hedef almanın çok büyük yankı uyandıracağını bilen Spotlight editörü Walter “Robby” Robinson, muhabirler Sacha Pfeiffer (Rachel McAdams) ve Michael Rezendes ve araştırmacı Matt Carroll davaya daha derinlemesine dalmaya karar verirler." xml:space="preserve">
+    <value>Spotlight is about the Boston Globe newspaper writers trying to elucidate a church that has been brought up with the incident of harassment and trying to clear it. The light Spotlight ”team, composed of the newspaper's writers, digs out the old books of allegations of harassment at the Catholic Church. After a year of research, Boston's top religious, legal and administrative unity of decades of finger-print on the truth. When newly appointed editor-in-chief Marty Baron arrives in Miami to head the Globe in the summer of 2001, with the dust of his foot, he spotlights the Spotlight team to follow an article about a local priest accused of sexual abuse of dozens of children for 30 years. Spotlight editor Walter “Robby” Robinson, journalists Sacha Pfeiffer (Rachel McAdams) and Michael Rezendes and investigator Matt Carroll, who knew that targeting the Catholic Church in Boston would have a huge impact, decided to dig deeper into the case.</value>
+  </data>
+  <data name="The Expandables bir kiralık savaş timidir ve bu sefer ki görevleri Güney Amerika’da bir ülkeye sızarak, bu ülkenin acımasız dikatatörünü devirmektir.. Fakat görev başlar başlamaz The Expandables grubu herşeyin tam olarak göründüğü gibi olmadığını anlar ve kendilerini tehlikeli bir ihanet ağının içerisinde bulurlar. Görevlerinin tamamlanmasının engellenmesi ve masum bir insanın hayatının tehlikeye atılmasından başka The Expandables grubu daha zor bir durum olan grubun dağılma tehlikesiyle karşı karşıyadır.." xml:space="preserve">
+    <value>The Expandables is a hired battleship, and this time their mission is to infiltrate a country in South America, to overthrow the brutal dictator of that country. In addition to preventing the completion of their mission and endangering the lives of an innocent person, The Expandables is in danger of disintegrating.</value>
+  </data>
+  <data name="Thomas bir yolunu bularak Labirent’ten kaçmayı başarır. Ancak Thomas ve arkadaşları labirentin bulunduğu tesisten de kaçması gerekir. Bir yolunu bularak bu tesisten de kaçmayı başarırlar. Büyük kaçış planının ardından W.I.C.K.E.D adındaki dünyaya kötülük saçana ve dünyayı yöneten organizasyona karşı büyük bir isyan başlatırlar. Bu direnişte şimdiye kadar W.I.C.K.E.D’e karşı en büyük direnişi sağlayan Right Hand adındaki direnişçi grupla bir araya gelirler. Direniş devam ederken Teresa, Thomas’a ihanet eder. Bu ihanetle birlikte Thomas kendisini tekrar W.I.C.K.E.D ile karşı karşıya bulur. Acımasız ve Dünya’ya kötülük ile hükmetmeye çalışan W.I.C.K.E.D, Minho’yu kaçırır. Bunun ardından Thomas ve arkadaşları bir plan yapar. Bu planın tek amacı Minho’yu W.I.C.K.E.D’in elinden kurtarmaktadır. Thomas ve arkadaşları Minho’yu kurtarmaya çalışırken birçok plan uygularken bazı kararlar alırlar. Bu kararlar sadece Minho’nun kurtuluşunu sağlamayacaktır." xml:space="preserve">
+    <value>Thomas finds a way to escape from the Labyrinth. However, Thomas and his friends must escape from the maze facility. They find a way to escape from this facility. After the great escape plan, they start a big rebellion against the world called W.I.C.K.E.D and the organization that governs the world. In this resistance, they come together with the resistance group called Right Hand, which is the biggest resistance against W.I.C.K.E.D. Teresa betrays Thomas as the resistance continues. With this betrayal, Thomas finds himself facing W.I.C.K.E.D. Ruthless and trying to rule the Earth with evil, W.I.C.K.E.D kidnaps Minho. Thomas and his friends then make a plan. The only purpose of this plan is to free Minho from W.I.C.K.E.D. While Thomas and his friends try to save Minho, they make some decisions while implementing many plans. These decisions will not only lead to Minho's salvation.</value>
+  </data>
+  <data name="Thomas isimli genç çocuk birdenbire bir asansörün içerisinde uyanır ve hızlı bir şekilde yukarı çıkmaktadır. Asansör geleceği son noktaya geldiğinde iste kapılar açılır ve kendisi ile aynı yaşlarda bir kaç genç ile karşılaşır. Bir koloniye sahip olan tanımadığı bu insanların yaşadığı yer ise devasa büyüklükte duvarlarla çevrili bir yaşam alanıdır ve orası hakkında tek bildikleri gerçek ise her sabah aynı saatlerde bir labirentin kapısının açıldığıdır. Thomas kendi adını ve hatta ailesini, geçmişini dahi hatırlamamakta, dahası ise karşılaştığı Kayranlılar toplumu tıpkı Thomas gibi bu yere nasıl ve neden getirildiklerine anlam veremezler. Daha fazla yazarsam sürpriz bozan vermiş olacağım iyi seyirler…" xml:space="preserve">
+    <value>The young boy, Thomas, suddenly wakes up in an elevator and rises up quickly. When the future of the elevator comes to an end, the doors open and meet a few young people of the same age. The place where these people who do not know a colony lives is surrounded by huge walls, and the only thing they know about it is that the door of a labyrinth is opened every morning at the same time. Thomas doesn't remember his own name and even his family and past, and moreover, like Thomas, the society he meets doesn't understand how and why they were brought to this place. If I write more, I will have given a good surprise iyi</value>
+  </data>
+  <data name="Uyumsuz" xml:space="preserve">
+    <value>Divergent</value>
+  </data>
+  <data name="Yandaş" xml:space="preserve">
+    <value>Divergent Series: Allegiant</value>
+  </data>
+  <data name="Ütopik bir Dünya’da geçen hikayenin ilk filminden bu yana gerçekleşen olayların aksiyonu en çok olanlardan biri Yandaş izleyenlerin karşısına 18 Mart 2016 tarihinde çıkıyor ve yine büyük bir merak konusu oluyor. Kuralsız filminin de yönetmenliğini yapan Robert Schwentke’nin kamera arkasına geçtiği Allegiant: Part 1 filmi yine Shailene Woodley, Miles Teller ve Theo James gibi isimlerin başrolü paylaştığı, Macera, Bilim Kurgu ve Gizem öğelerini içeriyor.&#xD;&#xA;&#xD;&#xA;Tris ve Dört sistemi alt üst ettikten sonra Chicago’yu çevreleyen duvarların dışına çıkmak zorunda kalırlar ve hayatlarında ilk kez doğup büyüdükleri şehri terk edeceklerdir. Dört ve Tris’in Chicago duvarlarının ardında devam etmekte olan ve bütün insanlığın kaderini belirleyecek olan savaşta kimin tarafında olmaları gerektikleri konusunda acilen karar vermeleri gerekecektir.." xml:space="preserve">
+    <value>In the 2015 film without rules, young people of a certain age in a futuristic dystopia and divided into five different categories were educated in classes designated for them, while Tris, with its unique characteristics within this structure, discovered that it had the power to change the order in the first film of the series.
+The sequel Insurgent 2015, adapted from the story of Veronice Roth, follows the beginning of a revolutionary movement with Tris' efforts and the gradual dissolution of the current hierarchy....</value>
+  </data>
+</root>

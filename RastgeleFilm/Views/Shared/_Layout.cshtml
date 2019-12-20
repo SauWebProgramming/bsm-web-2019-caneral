@@ -1,4 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 <!doctype html>
@@ -8,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1">
 
-    <title>Anasayfa</title>
+    <title>@_localizer["Anasayfa"]</title>
     <link rel="icon" href="~/img/big-logo.png" type="image/png">
     <link rel="shortcut icon" href="~/favicon.ico" type="img/x-icon">
 
@@ -55,27 +57,28 @@
         <div class="collapse navbar-collapse" id="navbarsExample06">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" asp-action="Index">Anasayfa<span class="sr-only">(current)</span></a>
-                </li>
+                    <a class="nav-link" asp-action="Index">@_localizer["Anasayfa"]</a>
+
+</li>
                 <li class="nav-item">
-                    <a class="nav-link" asp-action="Index">İletişim</a>
-                </li>
+                    <a class="nav-link" asp-action="Contact">@_localizer["İletişim"]</a>
+</li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Diziler</a>
-                </li>
+                    <a class="nav-link disabled" href="#">@_localizer["Diziler"]</a>
+</li>
                 @if (SignInManager.IsSignedIn(User))
                 {
                     <li class="nav-item">
-                        <a class="nav-link" asp-action="Listeler">Listelerim</a>
-                    </li>
+                        <a class="nav-link disabled" asp-controller="Users" asp-action="Listem">@_localizer["Listelerim"]</a>
+</li>
 
                 }
 
                 @if (User.IsInRole("Admin"))
                 {
                     <li class="nav-item">
-                        <a class="nav-link" asp-area="admin" asp-controller="dashboard" asp-action="Index">Admin Paneli</a>
-                    </li>
+                        <a class="nav-link" asp-area="admin" asp-controller="dashboard" asp-action="Index">@_localizer["Admin Paneli"]</a>
+</li>
 
                 }
             </ul>
@@ -129,9 +132,12 @@
     <footer class="card bg-dark">
         <div class="container">
             <div class="footer-logo"><a href="#"><img src="~/img/big-logo.png" alt=""></a></div>
-            <span class="copyright">&copy; Caner Al. Tüm Hakları Saklıdır.</span>
+            <span class="copyright">&copy; Caner Al. @_localizer["Tüm Hakları Saklıdır."]</span>
             <div class="credits">
                 Designed by <a href="https://www.linkedin.com/in/caner-al-655077150/">CanerAL</a>
+            </div>
+            <div class="row">
+                <partial name="_SelectLanguagePartial" />
             </div>
         </div>
     </footer>

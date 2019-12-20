@@ -14,6 +14,10 @@ using Microsoft.AspNetCore.Hosting;
 using System.ComponentModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.AspNetCore.Mvc.Razor;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Options;
 
 namespace RastgeleFilm
 {
@@ -26,10 +30,10 @@ namespace RastgeleFilm
 
         public IConfiguration Configuration { get; }
 
-        
+
         public void ConfigureServices(IServiceCollection services)
         {
-            
+            //Veritabaný baðlantýsý.
             services.AddDbContext<DataContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
@@ -45,13 +49,35 @@ namespace RastgeleFilm
                 .Build();
                 config.Filters.Add(new AuthorizeFilter(policy));
             });
-            
+            // Çevirilerin yer alacaðý klasörü belirtiyoruz.
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+            services.AddMvc()
+                    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+                    .AddDataAnnotationsLocalization();
+            //Özel bir saðlayýcý
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                var supportedCultures = new List<CultureInfo>
+                {
+                    new CultureInfo("tr-TR"),                    
+                    new CultureInfo("en-US"),                                                        
+                };
+
+                options.DefaultRequestCulture = new RequestCulture("tr-TR");
+                // Formatting numbers, dates, etc.
+                options.SupportedCultures = supportedCultures;
+                // UI strings that we have localized.
+                options.SupportedUICultures = supportedCultures;
+
+            });
+
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -67,13 +93,18 @@ namespace RastgeleFilm
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            var options = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
+            app.UseRequestLocalization(options.Value);
+
+
+
             app.UseRouting();
-            //Authentication yeni eklendi.
+            //Authentication eklendi.
             app.UseAuthentication();
             app.UseAuthorization();
 
 
-            
+
 
             app.UseEndpoints(endpoints =>
             {
